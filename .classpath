@@ -6,5 +6,6 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="/Users/joel/Documents/CSIS2420_Data_Structures/A05_SortingMethods/lib/Mystery.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
