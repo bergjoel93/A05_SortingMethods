@@ -41,28 +41,17 @@ public class ObjectArray implements Comparable<ObjectArray>{
 		return objectArray;
 	}
 	
-	private static int generateRandomNumber() {
-		// insert random number generator logic here. 
-		
-		Random rand = new Random();
-		return rand.nextInt(101); // generates a random number from 0 to 100. 
-	}
-	
-	/*public static ObjectArray[] generateObjects(int size) {
-		Random rand = new Random();
-		
-		ObjectArray[] objects = new ObjectArray[size];
-		
-		for( int i = 0; i < size; i++) {
-			int randomNumber = rand.nextInt(101); // generates the random number between 0 and 100
-			
-			objects[i] = new ObjectArray(number);
-			
-		}
-		return objects;
-	}
-	*/
-	
+	public static ObjectArray[] generateRandomArray(int size) {
+        ObjectArray[] objectArray = new ObjectArray[size];
+        Random random = new Random();
+
+        for (int i = 0; i < size; i++) {
+            int randomNumber = random.nextInt(101); // Generates a random number between 0 and 100
+            objectArray[i] = new ObjectArray(randomNumber);
+        }
+
+        return objectArray;
+    }
 	
 	 @Override
 	    public int compareTo(ObjectArray other) {
