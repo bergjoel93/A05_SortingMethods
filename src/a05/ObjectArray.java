@@ -2,7 +2,7 @@ package a05;
 
 import java.util.Random;
 
-public class ObjectArray {
+public class ObjectArray implements Comparable<ObjectArray>{
 	
 	int keyID;
 	int randomNumber;
@@ -31,12 +31,14 @@ public class ObjectArray {
 		}
 		return objects;
 	}
+	 @Override
+	    public int compareTo(ObjectArray other) {
+	        return Integer.compare(this.randomNumber, other.randomNumber);
+	    }
 
 	@Override
 	public String toString() {
 		return "ObjectArray [keyID=" + keyID + ", randomNumber=" + randomNumber + "]";
 	}
-	
-	
 
 }

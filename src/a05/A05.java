@@ -16,10 +16,27 @@ public class A05 {
 		for(ObjectArray arr : array) {
 			System.out.println(arr);
 		}
-		
-		
-		
+		System.out.println();
+		Mystery.sort1(array);
+		for(ObjectArray arr : array) {
+			System.out.println(arr);
+		}
 	}
+	
+	/* test for speed of soring algorithms using time. 
+	 * get time variable. Compare it. Then the slowest times will
+	 * be Insertion or selection. 
+	 * 
+	 * create a method that checks for stability
+	 * checks to make sure that algorithms are stable 
+	 * by using an array with duplicates {1,1,1,2,2,2) then 
+	 * checkin to see if their key values have shifted at all.
+	 * If their key values have shifted then then it's not stable. 
+	 * 
+	 * 
+	 * Create a method that classifies them. 
+	 * 
+	 */
 }
 /*
  * Notes
