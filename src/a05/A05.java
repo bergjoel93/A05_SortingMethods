@@ -10,9 +10,9 @@ public class A05 {
 	
 	
 	public static void main(String[] args) {
-		
-		ObjectArray[] array = ObjectArray.generateObjects(10);
-		
+		int[] values = {1,2,3,4,5};
+		ObjectArray[] array = ObjectArray.createArray(values);
+
 		for(ObjectArray arr : array) {
 			System.out.println(arr);
 		}
